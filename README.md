@@ -97,3 +97,17 @@ pnpm dev:prepare
 pnpm test
 pnpm dev
 ```
+
+## Publish
+
+The package is public on npm as [`nuxt-cloudflare-image-statamic`](https://www.npmjs.com/package/nuxt-cloudflare-image-statamic).
+
+**From CI (recommended):** add an npm [Automation token](https://docs.npmjs.com/creating-and-viewing-access-tokens) with publish access as the GitHub secret `NPM_TOKEN` on this repo, then push a `v*` tag or run the **Release** workflow manually.
+
+**Locally:**
+
+```bash
+pnpm test && pnpm prepack
+npm login
+npm publish --access public --provenance=false
+```
