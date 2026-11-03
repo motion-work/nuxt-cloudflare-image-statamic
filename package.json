@@ -1,0 +1,69 @@
+{
+  "name": "nuxt-cloudflare-image-statamic",
+  "version": "0.1.0",
+  "description": "Nuxt 4 module: responsive Cloudflare Image Resizing for Statamic image objects",
+  "author": "Motion Work (https://github.com/motion-work)",
+  "license": "MIT",
+  "homepage": "https://github.com/motion-work/nuxt-cloudflare-image-statamic#readme",
+  "bugs": "https://github.com/motion-work/nuxt-cloudflare-image-statamic/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/motion-work/nuxt-cloudflare-image-statamic.git"
+  },
+  "keywords": [
+    "nuxt",
+    "nuxt-module",
+    "nuxt4",
+    "cloudflare",
+    "image-resizing",
+    "statamic",
+    "srcset",
+    "responsive-image"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "type": "module",
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.mts",
+      "import": "./dist/module.mjs"
+    }
+  },
+  "main": "./dist/module.mjs",
+  "types": "./dist/types.d.mts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepack": "nuxt-module-build build",
+    "prepare": "nuxt-module-build build",
+    "dev": "nuxi dev playground",
+    "dev:build": "nuxi build playground",
+    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest watch"
+  },
+  "dependencies": {
+    "@nuxt/kit": "^4.0.0",
+    "@nuxt/schema": "^4.0.0"
+  },
+  "devDependencies": {
+    "@nuxt/eslint-config": "^1.5.0",
+    "@nuxt/module-builder": "^1.0.0",
+    "@vitejs/plugin-vue": "^6.0.0",
+    "eslint": "^9.30.0",
+    "happy-dom": "^18.0.0",
+    "nuxt": "^4.0.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.2.0",
+    "vue": "^3.5.0",
+    "vue-tsc": "^3.3.7"
+  }
+}
