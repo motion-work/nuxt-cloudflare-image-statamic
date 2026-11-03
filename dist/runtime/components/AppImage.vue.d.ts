@@ -1,0 +1,36 @@
+import type { StatamicImage } from '../types.js';
+type __VLS_Props = {
+    src: string | StatamicImage | readonly StatamicImage[];
+    alt?: string;
+    focus?: string;
+    width?: number | string;
+    height?: number | string;
+    aspectRatio?: number | string;
+    sizes?: string;
+    loading?: 'eager' | 'lazy';
+    quality?: number;
+    sharpen?: boolean;
+    blur?: number;
+    crop?: string;
+    cropGravity?: string;
+    flip?: boolean;
+    flop?: boolean;
+    brightness?: number;
+    saturation?: number;
+    hue?: number;
+    contrast?: number;
+    optimization?: string;
+    sepia?: number;
+    placeholder?: boolean;
+    placeholderWidth?: number;
+    placeholderQuality?: number;
+};
+declare const __VLS_export: import("vue").DefineComponent<__VLS_Props, {}, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<__VLS_Props> & Readonly<{}>, {
+    sizes: string;
+    loading: "eager" | "lazy";
+    placeholder: boolean;
+    placeholderWidth: number;
+    placeholderQuality: number;
+}, {}, {}, {}, string, import("vue").ComponentProvideOptions, false, {}, any>;
+declare const _default: typeof __VLS_export;
+export default _default;

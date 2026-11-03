@@ -1,6 +1,6 @@
 {
   "name": "nuxt-cloudflare-image-statamic",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Nuxt 4 module: responsive Cloudflare Image Resizing for Statamic image objects",
   "author": "Motion Work (https://github.com/motion-work)",
   "license": "MIT",
@@ -42,7 +42,6 @@
   ],
   "scripts": {
     "prepack": "nuxt-module-build build",
-    "prepare": "nuxt-module-build build",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",

@@ -1,0 +1,12 @@
+{
+  "name": "nuxt-cloudflare-image-statamic",
+  "configKey": "cloudflareImage",
+  "compatibility": {
+    "nuxt": ">=3.13.0"
+  },
+  "version": "0.1.1",
+  "builder": {
+    "@nuxt/module-builder": "1.0.3",
+    "unbuild": "unknown"
+  }
+}
